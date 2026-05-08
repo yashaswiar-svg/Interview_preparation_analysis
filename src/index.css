@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Grotesk", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Merriweather", serif;
+}
+
+.markdown-body h1 {
+  @apply text-2xl font-serif font-bold mb-6 mt-8 text-[#1e1b4b] border-b border-slate-200 pb-4 text-center uppercase tracking-widest;
+}
+
+.markdown-body h2 {
+  @apply text-sm font-sans font-bold mb-4 mt-8 text-indigo-700 tracking-wider border-b border-slate-100 pb-1 flex items-center gap-2;
+}
+
+.markdown-body p {
+  @apply mb-4 leading-relaxed text-slate-700 font-serif text-[13px];
+}
+
+.markdown-body ul {
+  @apply list-disc list-inside mb-4 space-y-2 text-slate-700 font-serif text-[12px];
+}
+
+.markdown-body blockquote {
+  @apply border-l-4 border-indigo-200 bg-slate-50 p-4 italic my-6 text-slate-600 rounded-r-lg;
+}
+
+.markdown-body hr {
+  @apply my-8 border-slate-200;
+}
+
+.markdown-body code {
+  @apply bg-slate-50 text-indigo-600 px-1.5 py-0.5 rounded text-[11px] font-mono border border-slate-100;
+}
+
+.markdown-body pre {
+  @apply bg-slate-50 text-slate-600 p-6 rounded-lg my-6 overflow-x-auto border border-slate-200 font-mono text-[11px] shadow-sm;
+}
+
+.markdown-body pre code {
+  @apply bg-transparent text-inherit p-0 border-none;
+}

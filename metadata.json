@@ -1,0 +1,6 @@
+{
+  "name": "Chanakya University Interview Prep",
+  "description": "AI-powered interview preparation assistant for MCA students. Generate mock sessions, practice coding, and get behavioral feedback.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["AI Content Generation", "Coding Evaluation", "Mock Interviews"]
+}
